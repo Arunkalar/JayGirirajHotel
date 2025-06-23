@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Jay Giriraj Hotel & Restaurant</title>
+    <meta name="description" content="Get in touch with Jay Giriraj Hotel & Restaurant. Find our location, contact details, and send us a message.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Jay Giriraj</h2>
+                <span>Hotel & Restaurant</span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="feedback.html" class="nav-link">Feedback</a>
+                </li>
+            </ul>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in">Contact Us</h1>
+            <p class="fade-in">We'd love to hear from you. Get in touch with us!</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <!-- Contact Information -->
+                <div class="contact-info fade-in">
+                    <h2>Get In Touch</h2>
+                    <p>Whether you want to make a reservation, place an order, or just say hello, we're here to help!</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Visit Us</h4>
+                                <p>Sanodha dungasara bus stand<br>
+                                sagar - Damoh main road <br>
+                                Sagar, MP 470001</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Call Us</h4>
+                                <p>+91 9516705833<br>
+                                +91 8319846648<br>
+                                (Available 11 AM - 11 PM)</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email Us</h4>
+                                <p>info@jaygirirajhotel.com<br>
+                                   arunkalar870@gmail.com<br>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Opening Hours</h4>
+                                <p>Monday - Sunday: 5:00 AM - 1:00 AM<br>
+                                Room Service: 24/7<br>
+                                Kitchen closes at 10:30 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-section fade-in">
+                    <h2>Send Us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name *</label>
+                                <input type="text" id="firstName" name="firstName" required>
+                                <span class="error-message" id="firstName-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="lastName">Last Name *</label>
+                                <input type="text" id="lastName" name="lastName" required>
+                                <span class="error-message" id="lastName-error"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone">
+                                <span class="error-message" id="phone-error"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="reservation">Table Reservation</option>
+                                <option value="catering">Catering Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="complaint">Complaint</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkmark"></span>
+                                I would like to receive updates and promotional offers via email
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loader" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                        
+                        <div class="form-message" id="form-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Find Us</h2>
+            <div class="map-container fade-in">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.8947334803034!2d72.5797068!3d23.0224987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e848aba5bd449%3A0x4fcedd11614f6516!2sAhmedabad%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1640123456789!5m2!1sen!2sin"
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Jay Giriraj Hotel Location">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Actions -->
+    <section class="quick-actions">
+        <div class="container">
+            <div class="actions-grid">
+                <div class="action-card fade-in">
+                    <div class="action-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Make a Reservation</h3>
+                    <p>Book your table in advance to ensure the best dining experience</p>
+                    <a href="tel:+919876543210" class="btn btn-secondary">Call Now</a>
+                </div>
+                
+                <div class="action-card fade-in">
+                    <div class="action-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Place an Order</h3>
+                    <p>Order your favorite dishes for pickup or delivery</p>
+                    <a href="menu.html" class="btn btn-secondary">View Menu</a>
+                </div>
+                
+                <div class="action-card fade-in">
+                    <div class="action-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Catering Services</h3>
+                    <p>Let us cater your special events with our delicious cuisine</p>
+                    <a href="services.html" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Jay Giriraj</h3>
+                        <p>Hotel & Restaurant</p>
+                    </div>
+                    <p>Experience the finest in hospitality and cuisine with our traditional recipes and modern comfort.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 9516705833</p>
+                        <p><i class="fas fa-envelope"></i> info@jaygirirajhotel.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> sanodha bus stand, Sagar MP</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jay Giriraj Hotel & Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

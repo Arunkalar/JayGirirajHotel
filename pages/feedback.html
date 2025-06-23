@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Jay Giriraj Hotel & Restaurant</title>
+    <meta name="description" content="Share your experience and feedback with Jay Giriraj Hotel & Restaurant. Your opinion matters to us.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Jay Giriraj</h2>
+                <span>Hotel & Restaurant</span>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="../index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="menu.html" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="about.html" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="feedback.html" class="nav-link active">Feedback</a>
+                </li>
+            </ul>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in">Your Feedback Matters</h1>
+            <p class="fade-in">Help us serve you better by sharing your experience</p>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback-section">
+        <div class="container">
+            <div class="feedback-content">
+                <!-- Feedback Introduction -->
+                <div class="feedback-intro fade-in">
+                    <h2>We Value Your Opinion</h2>
+                    <p>At Jay Giriraj Hotel & Restaurant, your satisfaction is our priority. Whether you had an amazing experience or encountered any issues, we want to hear from you. Your feedback helps us improve our services and continue delivering the best hospitality experience.</p>
+                    
+                    <div class="feedback-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-heart"></i>
+                            <span>Help us improve</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-gift"></i>
+                            <span>Special offers for reviewers</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-users"></i>
+                            <span>Help other guests</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Feedback Form -->
+                <div class="feedback-form-section fade-in">
+                    <form class="feedback-form" id="feedbackForm">
+                        <div class="form-header">
+                            <h3>Share Your Experience</h3>
+                            <p>Please rate your experience and tell us about your visit</p>
+                        </div>
+                        
+                        <!-- Personal Information -->
+                        <div class="form-section">
+                            <h4>Personal Information</h4>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="customerName">Your Name *</label>
+                                    <input type="text" id="customerName" name="customerName" required>
+                                    <span class="error-message" id="customerName-error"></span>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="customerEmail">Email Address *</label>
+                                    <input type="email" id="customerEmail" name="customerEmail" required>
+                                    <span class="error-message" id="customerEmail-error"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="customerPhone">Phone Number</label>
+                                    <input type="tel" id="customerPhone" name="customerPhone">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="visitDate">Date of Visit</label>
+                                    <input type="date" id="visitDate" name="visitDate">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Rating Section -->
+                        <div class="form-section">
+                            <h4>Rate Your Experience</h4>
+                            
+                            <div class="rating-group">
+                                <label>Overall Experience *</label>
+                                <div class="star-rating" data-rating="overall">
+                                    <span class="star" data-value="1">★</span>
+                                    <span class="star" data-value="2">★</span>
+                                    <span class="star" data-value="3">★</span>
+                                    <span class="star" data-value="4">★</span>
+                                    <span class="star" data-value="5">★</span>
+                                </div>
+                                <input type="hidden" name="overallRating" id="overallRating" required>
+                                <span class="error-message" id="overallRating-error"></span>
+                            </div>
+                            
+                            <div class="rating-group">
+                                <label>Food Quality</label>
+                                <div class="star-rating" data-rating="food">
+                                    <span class="star" data-value="1">★</span>
+                                    <span class="star" data-value="2">★</span>
+                                    <span class="star" data-value="3">★</span>
+                                    <span class="star" data-value="4">★</span>
+                                    <span class="star" data-value="5">★</span>
+                                </div>
+                                <input type="hidden" name="foodRating" id="foodRating">
+                            </div>
+                            
+                            <div class="rating-group">
+                                <label>Service Quality</label>
+                                <div class="star-rating" data-rating="service">
+                                    <span class="star" data-value="1">★</span>
+                                    <span class="star" data-value="2">★</span>
+                                    <span class="star" data-value="3">★</span>
+                                    <span class="star" data-value="4">★</span>
+                                    <span class="star" data-value="5">★</span>
+                                </div>
+                                <input type="hidden" name="serviceRating" id="serviceRating">
+                            </div>
+                            
+                            <div class="rating-group">
+                                <label>Ambiance</label>
+                                <div class="star-rating" data-rating="ambiance">
+                                    <span class="star" data-value="1">★</span>
+                                    <span class="star" data-value="2">★</span>
+                                    <span class="star" data-value="3">★</span>
+                                    <span class="star" data-value="4">★</span>
+                                    <span class="star" data-value="5">★</span>
+                                </div>
+                                <input type="hidden" name="ambianceRating" id="ambianceRating">
+                            </div>
+                            
+                            <div class="rating-group">
+                                <label>Value for Money</label>
+                                <div class="star-rating" data-rating="value">
+                                    <span class="star" data-value="1">★</span>
+                                    <span class="star" data-value="2">★</span>
+                                    <span class="star" data-value="3">★</span>
+                                    <span class="star" data-value="4">★</span>
+                                    <span class="star" data-value="5">★</span>
+                                </div>
+                                <input type="hidden" name="valueRating" id="valueRating">
+                            </div>
+                        </div>
+
+                        <!-- Experience Details -->
+                        <div class="form-section">
+                            <h4>Tell Us More</h4>
+                            
+                            <div class="form-group">
+                                <label for="visitType">Type of Visit</label>
+                                <select id="visitType" name="visitType">
+                                    <option value="">Select visit type</option>
+                                    <option value="dine-in">Dine-in</option>
+                                    <option value="takeaway">Takeaway</option>
+                                    <option value="delivery">Delivery</option>
+                                    <option value="catering">Catering</option>
+                                    <option value="event">Event/Function</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="partySize">Party Size</label>
+                                <select id="partySize" name="partySize">
+                                    <option value="">Select party size</option>
+                                    <option value="individual">Individual</option>
+                                    <option value="couple">Couple (2)</option>
+                                    <option value="small">Small Group (3-5)</option>
+                                    <option value="medium">Medium Group (6-10)</option>
+                                    <option value="large">Large Group (10+)</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="favoriteItems">What did you order? (Optional)</label>
+                                <textarea id="favoriteItems" name="favoriteItems" rows="2" placeholder="Tell us about your favorite dishes..."></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="feedbackComments">Your Comments *</label>
+                                <textarea id="feedbackComments" name="feedbackComments" rows="5" placeholder="Share your experience, suggestions, or any concerns..." required></textarea>
+                                <span class="error-message" id="feedbackComments-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="suggestions">Suggestions for Improvement</label>
+                                <textarea id="suggestions" name="suggestions" rows="3" placeholder="How can we make your next visit even better?"></textarea>
+                            </div>
+                        </div>
+
+                        <!-- Preferences -->
+                        <div class="form-section">
+                            <h4>Preferences</h4>
+                            
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="wouldRecommend" id="wouldRecommend">
+                                    <span class="checkmark"></span>
+                                    I would recommend Jay Giriraj Hotel & Restaurant to others
+                                </label>
+                            </div>
+                            
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="wouldReturn" id="wouldReturn">
+                                    <span class="checkmark"></span>
+                                    I would like to visit again
+                                </label>
+                            </div>
+                            
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="allowPublish" id="allowPublish">
+                                    <span class="checkmark"></span>
+                                    You may publish my review (first name only)
+                                </label>
+                            </div>
+                            
+                            <div class="checkbox-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="allowContact" id="allowContact">
+                                    <span class="checkmark"></span>
+                                    You may contact me for follow-up
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-submit">
+                            <button type="submit" class="btn btn-primary">
+                                <span class="btn-text">Submit Feedback</span>
+                                <span class="btn-loader" style="display: none;">
+                                    <i class="fas fa-spinner fa-spin"></i> Submitting...
+                                </span>
+                            </button>
+                        </div>
+                        
+                        <div class="form-message" id="feedback-message"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Thank You Section -->
+    <section class="thank-you-section">
+        <div class="container">
+            <div class="thank-you-content fade-in">
+                <h2>Thank You for Your Feedback!</h2>
+                <p>Every review helps us improve our services and create better experiences for all our guests. We appreciate you taking the time to share your thoughts with us.</p>
+                
+                <div class="feedback-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">4.8</div>
+                        <div class="stat-label">Average Rating</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">2500+</div>
+                        <div class="stat-label">Happy Reviews</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Would Recommend</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <h3>Jay Giriraj</h3>
+                        <p>Hotel & Restaurant</p>
+                    </div>
+                    <p>Experience the finest in hospitality and cuisine with our traditional recipes and modern comfort.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> +91 9516705833</p>
+                        <p><i class="fas fa-envelope"></i> info@jaygirirajhotel.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> sanodha bus stand, Sagar MP</p>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jay Giriraj Hotel & Restaurant. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
